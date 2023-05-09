@@ -1,0 +1,15 @@
+[package]
+name = "imxrt-usdhc"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+bitflags = "1.0"
+ral-registers = "0.1"
+
+[dependencies.sdio-host]
+version = "0.9"
+
+[patch.crates-io.sdio-host]
+path = "../../sdio-host"
